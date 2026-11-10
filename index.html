@@ -43,10 +43,10 @@ h2{font-size:clamp(28px,4vw,38px);margin-bottom:12px}
 /* HEADER Y LOGO */
 header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);z-index:5}
 header .wrap{display:flex;justify-content:space-between;align-items:center;height:96px;max-width:1200px;padding:0 16px}
-.logo-brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+.logo-brand{display:flex;align-items:center;gap:14px;text-decoration:none;min-width:0}
 .logo-brand img{height:85px;width:auto;object-fit:contain;display:block}
 .logo-brand strong{font-family:Fraunces,Georgia,serif;font-size:24px;color:var(--ink);white-space:nowrap;line-height:1}
-header .btn{padding:11px 24px;font-size:15px}
+header .btn{padding:11px 24px;font-size:15px;white-space:nowrap;flex:none}
 
 /* HERO Y MARCO DE FOTO ARQUEADO */
 .hero{background:var(--mist);padding:56px 0 72px}
@@ -144,8 +144,9 @@ footer.site{background:var(--ink);color:var(--mist);padding:28px 0;font-size:15p
 .cerrar:hover{background:var(--line);transform:rotate(90deg)}
 @keyframes aparece{from{opacity:0;transform:translateY(16px) scale(.95)}to{opacity:1;transform:none}}
 
-@media(max-width:800px){.hero .wrap,.feat,.about,.contact,.g3{grid-template-columns:1fr}.about-ph{height:400px}.feat:nth-of-type(even) .ph{order:0}.arch{max-width:300px;margin:0 auto}.vid{max-width:300px;margin:0 auto;width:100%}section{padding:52px 0}header .wrap{height:76px;padding:0 12px}.logo-brand img{height:58px}.logo-brand strong{font-size:18px}}
+@media(max-width:800px){.hero .wrap,.feat,.about,.contact,.g3{grid-template-columns:1fr}.about-ph{height:400px}.feat:nth-of-type(even) .ph{order:0}.arch{max-width:300px;margin:0 auto}.vid{max-width:300px;margin:0 auto;width:100%}section{padding:52px 0}header .wrap{height:76px;padding:0 12px;gap:10px}.logo-brand{gap:8px}.logo-brand img{height:52px}.logo-brand strong{font-size:15px;white-space:normal;line-height:1.15}header .btn{padding:10px 16px;font-size:14px}}
 @media(max-width:560px){.fila,.stats,.cred{grid-template-columns:1fr}.ubi-info{padding:18px}.ubi-info .btn{width:100%;text-align:center}}
+@media(max-width:380px){.logo-brand img{height:44px}.logo-brand strong{font-size:13px}header .btn{padding:9px 12px;font-size:13px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
 </style>
 </head>
